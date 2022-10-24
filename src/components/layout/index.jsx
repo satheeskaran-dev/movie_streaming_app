@@ -3,13 +3,13 @@ import { Container, Main, Content } from "./styles";
 import SideBar from "../layout/SideBar";
 import Header from "../layout/Header";
 
-const Layout = () => {
+const Layout = ({children}) => {
   return (
     <Container>
       <SideBar />
       <Main>
         <Header />
-        <Content></Content>
+        <Content>{children}</Content>
       </Main>
     </Container>
   );

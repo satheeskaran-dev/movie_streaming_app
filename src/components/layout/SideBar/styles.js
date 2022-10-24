@@ -3,7 +3,7 @@ import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined
 
 export const Container = styled(Box)(({ theme }) => ({
   backgroundColor: theme.palette.primary.main,
-  color: theme.palette.common.white,
+  color: theme.palette.text.primary,
   height: "100vh",
   width: "240px",
   minWidth: "240px",
@@ -40,7 +40,7 @@ export const Item = styled(Box)(({ theme }) => ({
 export const Divider = styled(({ ...rest }) => <MuiDivider variant='horizontal' {...rest} />)(
   ({ theme }) => ({
     margin: "15px 0px",
-    border: "0.5px solid #373737",
+    border: `0.5px solid ${theme.palette.soft}`,
   })
 );
 
