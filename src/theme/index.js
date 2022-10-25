@@ -18,10 +18,10 @@ const mode = [
 ];
 
 const FinalTheme = ({ children }) => {
-  const currentTheme = useSelector((state) => state.theme.mode);
+  const darkMode = useSelector((state) => state.theme.darkMode);
 
   const theme = createTheme({
-    palette: currentTheme === "light" ? mode[0] : mode[1],
+    palette: darkMode ? mode[1] : mode[0],
     typography: {
       fontFamily: "roboto",
     },

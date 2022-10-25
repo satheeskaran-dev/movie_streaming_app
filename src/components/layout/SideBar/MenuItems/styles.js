@@ -51,6 +51,7 @@ export const LoginButton = styled(({ ...props }) => (
 ))(({ theme }) => ({
   height: "30px",
   fontSize: "13px",
+
   "&.MuiButton-outlined": {
     border: "1px solid #2196f3",
   },
